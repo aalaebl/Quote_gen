@@ -1,0 +1,90 @@
+// font-family: 'Pacifico', cursive;
+// font-family: 'Srisakdi', cursive;
+
+body {
+  background: #f3e6e3;
+  font-family: "Srisakdi", cursive;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  user-select: none;
+  h1 {
+    animation: transitionIn 0.75s;
+    color: #776d8a;
+    font-size: 3em;
+    font-family: "Pacifico", cursive;
+    margin: 0 auto 0 auto;
+    pointer-events: none;
+  }
+}
+
+#container {
+  animation: transitionIn 0.75s;
+  background: #dbe3e5;
+  color: #544b64;
+  width: inherit;
+  max-width: 70%;
+  padding: 20px;
+  border-radius: 2em / 2em;
+  margin: 20px auto;
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  display: none;
+  pointer-events: none;
+}
+span {
+  font-size: 0.75em;
+  display: block;
+  float: right;
+}
+
+button {
+  animation: transitionIn 0.75s;
+  font-family: "Srisakdi", cursive;
+  font-weight: bold;
+  background: #776d8a;
+  color: #f3e6e3;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 250px;
+  font-size: inherit;
+  margin: 20px auto;
+  border-radius: 2em/ 2em;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d3c09a;
+  transition: all 0.75s ease;
+}
+
+#panel {
+  margin: 0 auto;
+}
+#copy {
+  display: none;
+  height: 50px;
+  padding: 0 25px;
+  width: inherit;
+}
+
+.copied {
+  animation: transitionIn 0.75s;
+  background: #539446;
+  pointer-events: none;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
